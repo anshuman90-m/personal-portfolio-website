@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anshuman | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="css2.css">
 </head>
 <body>
 
@@ -207,26 +207,51 @@ My goal is to build a successful career where I can combine my analytical thinki
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea cols="30" rows="8" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-  </section>
+  <!-- Contact / Feedback Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a project or feedback? Send me a message!</p>
 
+    <form action="https://formspree.io/f/xoeaelow" method="POST" class="contact-form">
+      
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+
+      <!-- Subject (optional) -->
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Feedback">
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <!-- Honeypot (spam protection - mat hatao) -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</div>
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-text">
-      <p>Copyright © 2025 | Designed & Developed by <span>Anshuman</span></p>
+      <p>Copyright © 2026 | Designed & Developed by <span>Anshuman</span></p>
     </div>
     <div class="footer-iconTop">
       <a href="#home"><i class="fas fa-arrow-up"></i></a>
