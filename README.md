@@ -1,4 +1,3 @@
-# Personal Portfolio Website
 
 ## 📌 About the Project
 
@@ -59,7 +58,9 @@ Through this project, I learned:
 
 ## 📸 Screenshots
 
-Add screenshots of your portfolio website here.
+<img width="1890" height="914" alt="image" src="https://github.com/user-attachments/assets/55209c73-3813-436c-9101-751cd75647d5" />
+
+
 
 ## 👨‍💻 Author
 
