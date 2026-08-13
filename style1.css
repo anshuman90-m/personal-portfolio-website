@@ -294,33 +294,101 @@ section {
 }
 
 /* Contact */
-.contact form {
-  max-width: 700px;
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: #0f0f0f; /* dark theme ke liye - light theme ke liye change kar sakte ho */
+  color: #fff;
+}
+
+.contact-container {
+  max-width: 650px;
   margin: 0 auto;
 }
 
-.input-box {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+.section-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.input-box input,
-.contact textarea {
-  width: 100%;
-  padding: 15px;
-  background: var(--second-bg-color);
+.section-subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6366f1; /* indigo color */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
   border: none;
   border-radius: 10px;
-  color: var(--text-color);
-  font-size: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.contact textarea {
-  resize: none;
-  margin-bottom: 15px;
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
 }
 
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.9rem;
+  }
+  .contact-section {
+    padding: 50px 15px;
+  }
+}
 /* Footer */
 .footer {
   display: flex;
